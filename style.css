@@ -75,3 +75,14 @@ header {
   padding-top: 15px;
   text-align: center;
 }
+
+/*footer */
+footer {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+}
+.social-icons {
+  font-size: 24px;
+  margin: 0 10px;
+}
