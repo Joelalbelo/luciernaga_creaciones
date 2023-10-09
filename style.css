@@ -1,0 +1,76 @@
+/*nav */
+header {
+
+  width: auto;
+  height: 65px;
+  background-color: rgb(78, 78, 76);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: 45px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-item {
+  color: yellow;
+  
+} 
+
+/* Body */
+body {
+
+
+} 
+
+/* Mitad imagen mitad texto*/
+#container_1 img {
+    max-width: 100%;
+}
+
+/*Carousel */
+#img1 {
+  
+  width: 100%;
+  height: 45rem;
+}
+#img2 {
+  
+  width: 100%;
+  height: 45rem;
+}
+#carousel {
+  max-width: 100%;
+  padding: 0px ;
+  margin: 0px;
+}
+
+/*Cards*/
+.container-3 {
+  background-color: rgb(175, 172, 172);
+  padding: 16px;
+  margin-top: 15px;
+}
+
+/*Fomr*/
+#titulo_form {
+padding-top: 15px;
+text-align: center;
+}
+
+/*footer */
+footer {
+background-color: #f8f9fa;
+padding: 20px;
+text-align: center;
+}
+.social-icons {
+font-size: 24px;
+margin: 0 10px;
+}
