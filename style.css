@@ -74,3 +74,40 @@ text-align: center;
 font-size: 24px;
 margin: 0 10px;
 }
+
+/* Media query para pantallas pequeñas (smartphones) */
+@media (max-width: 767px) {
+  header {
+    height: auto;
+    padding: 10px; 
+  }
+
+  .logo {
+    width: 40px; 
+  }
+
+  .navbar-collapse {
+    background-color: rgb(78, 78, 76); 
+  }
+
+  .nav-item {
+    color: yellow; 
+    }
+
+  .nav-item a {
+    color: yellow;
+  }
+}
+
+/* Media query para pantallas grandes */
+@media (min-width: 1200px) {
+  .navbar-collapse {
+    background-color: transparent; 
+  }
+
+  .nav-item a {
+    color: yellow; 
+  }
+
+  
+}
