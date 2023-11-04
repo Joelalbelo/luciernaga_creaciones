@@ -1,28 +1,19 @@
-const formulario = document.querySelector("#formulario-compra");
-const precio = document.querySelector("#totalPago");
-const opciones = formulario.querySelectorAll(".form-check-input");
-const numero = document.querySelector("#numero");
-const totalpago = document.querySelector("#totalPago");
-
-
-opciones.forEach((check)=>{
-    check.addEventListener("click", ()=>{
-        let precio = 500;
-        let cantidad = 0;
-        let descuento = 1;
-
-        opciones.forEach((check)=>{
-            if(check.checked)
-                cantidad++;
-        })
-
-        if(parseInt(numero.value)>5 && parseInt(numero.value)<=15)
-            descuento=.9;
-        if(parseInt(numero.value)>15 && parseInt(numero.value)<=25)
-            descuento=.85;
-        if(parseInt(numero.value)>=25)
-            descuento=.7
-
-        totalpago.innerHTML = precio*parseInt(numero.value)*cantidad*descuento
-    });
-})
+function calcularPrecio() {
+    // Obtén los valores ingresados por el usuario
+    const cantidadPrendas = parseInt(document.getElementById("cantidadPrendas").value);
+    const opcionSeleccionada = document.getElementById("opcionSeleccionada").value;
+    
+    // Realiza el cálculo del precio según la opción seleccionada
+    let precio = 0;
+    if (opcionSeleccionada === "opcion1") {
+      precio = ((cantidadPrendas*500)*0.9); 
+    } else if (opcionSeleccionada === "opcion2") {
+      precio = ((cantidadPrendas*500)*1.2); 
+    } else if (opcionSeleccionada === "opcion3") {
+      precio = ((cantidadPrendas*500)*1.3); 
+    }
+    
+    // Muestra el resultado en la página
+    document.getElementById("resultado").textContent = "$" + precio;
+  }
+  

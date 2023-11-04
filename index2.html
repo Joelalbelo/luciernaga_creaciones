@@ -43,6 +43,7 @@
 
 <div class="container-fluid" id="titulo_form">
     <h2>Compra mayorista</h2>
+    <h6>*precio por unidad $500</h6>
 </div>
 
 <div class="container">
@@ -50,9 +51,9 @@
             <!-- Tarjeta 1 - Borde Azul -->
             <div class="col-md-4">
                 <div class="card border-primary mb-3" style="border-width: 4px;">
-                    <div class="card-header text-center">compras mayores a 5 prendas</div>
+                    <div class="card-header text-center">contado</div>
                     <div class="card-body">
-                        <p class="card-text text-center">Tienen un desdecuento</p>
+                        <p class="card-text text-center">Tienen un descuento</p>
                         <h5 class="card-title text-center">10% </h5>
                     </div>
                 </div>
@@ -61,10 +62,10 @@
             <!-- Tarjeta 2 - Borde Verde -->
             <div class="col-md-4">
                 <div class="card border-success mb-3" style="border-width: 4px;">
-                    <div class="card-header text-center">Compras mayores a 15 prendas</div>
+                    <div class="card-header text-center">6 Cuotas</div>
                     <div class="card-body">
-                        <p class="card-text text-center">Tienen un descuento</p>
-                        <h5 class="card-title text-center">15%</h5>
+                        <p class="card-text text-center">Tienen un recargo</p>
+                        <h5 class="card-title text-center">20%</h5>
                     </div>
                 </div>
             </div>
@@ -72,9 +73,9 @@
             <!-- Tarjeta 3 - Borde Rojo -->
             <div class="col-md-4">
                 <div class="card border-danger mb-3" style="border-width: 4px;">
-                    <div class="card-header text-center">Compras mayores a 25 prendas</div>
+                    <div class="card-header text-center">12 Cuotas</div>
                     <div class="card-body">
-                        <p class="card-text text-center">Tienen un descuento</p>
+                        <p class="card-text text-center">Tienen un recargo </p>
                         <h5 class="card-title text-center">30%</h5>
                     </div>
                 </div>
@@ -96,46 +97,38 @@
             <label for="email" class="form-label">Email</label>
             <input type="email" class="form-control" id="email" placeholder="Escribe tu email">
         </div>
-        <div class="row">
-           
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="numero">Cantidad de productos:</label>
-                    <input type="number" name="numero" class="form-control" id="numero" placeholder="Ingresa un número" value="1">
-                </div>
+        <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <form id="miFormulario" class="p-3">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label for="cantidadPrendas" class="form-label">Número de Prendas:</label>
+                      <input type="number" class="form-control" id="cantidadPrendas" min="1" required>
+                    </div>
+          
+                    <div class="col-md-6">
+                      <label for="opcionSeleccionada" class="form-label">Opción:</label>
+                      <select class="form-select" id="opcionSeleccionada">
+                        <option value="opcion1">Contado</option>
+                        <option value="opcion2">6 Cuotas</option>
+                        <option value="opcion3">12 Cuotas</option>
+                      </select>
+                    </div>
+                  </div>
+          
+                  <button type="button" class="btn btn-primary" onclick="calcularPrecio()">Calcular Precio</button>
+                </form>
+              </div>
             </div>
-    
-            <div class="col-md-6">
-                <label for="flexCheckDefault">Seleccione tipo de producto/s:</label>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                      Borlas
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                    <label class="form-check-label" for="flexCheckChecked">
-                     Colgantes
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                      Atrapasueños
-                    </label>
-                  </div>
+          
+            <div class="row mt-3">
+              <div class="col-md-6">
+                <p>PRECIO: <span id="resultado"></span></p>
+              </div>
             </div>
-        </div>
-
+          </div>
         
-        <div class="d-grid gap-2 col-6 mx-auto">
-            <div class="alert alert-dark mt-2 mb-4" role="alert">
-                Total a pagar: $ <span id="totalPago" class="align-middle font-weight-bold">0</span>
-            </div>
-            <button class="btn btn-primary" type="submit">Comprar</button>
-            
-        </div>       
           
         
     </form>
