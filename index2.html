@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./img/logoLuciernaga.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Luciernaga Creaciones</title>
+</head>
+<body>
+
+<header>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logoLuciernaga.png" alt="logo" width="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://joelalbelo.github.io/luciernaga_creaciones/">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#carousel">PRODUCTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+<div class="container-fluid" id="titulo_form">
+    <h2>Compra mayorista</h2>
+</div>
+
+<div class="container">
+        <div class="row mt-3 mb-3 p-3">
+            <!-- Tarjeta 1 - Borde Azul -->
+            <div class="col-md-4">
+                <div class="card border-primary mb-3" style="border-width: 4px;">
+                    <div class="card-header text-center">compras mayores a 5 prendas</div>
+                    <div class="card-body">
+                        <p class="card-text text-center">Tienen un desdecuento</p>
+                        <h5 class="card-title text-center">10% </h5>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Tarjeta 2 - Borde Verde -->
+            <div class="col-md-4">
+                <div class="card border-success mb-3" style="border-width: 4px;">
+                    <div class="card-header text-center">Compras mayores a 15 prendas</div>
+                    <div class="card-body">
+                        <p class="card-text text-center">Tienen un descuento</p>
+                        <h5 class="card-title text-center">15%</h5>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Tarjeta 3 - Borde Rojo -->
+            <div class="col-md-4">
+                <div class="card border-danger mb-3" style="border-width: 4px;">
+                    <div class="card-header text-center">Compras mayores a 25 prendas</div>
+                    <div class="card-body">
+                        <p class="card-text text-center">Tienen un descuento</p>
+                        <h5 class="card-title text-center">30%</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+<div class="container-fluid d-flex justify-content-center">
+    <form class="row mt-3 mb-3 p-3" action="">
+        <div class="col-md-6">
+            <label for="name" class="form-label">Nombre:</label>
+            <input type="text" class="form-control" id="name" placeholder="Escribe tu nombre">
+        </div>
+        <div class="col-md-6">
+            <label for="apellido" class="form-label">Apellido:</label>
+            <input type="text" class="form-control" id="apellido" placeholder="Escribe tu apellido">
+        </div>
+        <div class="col-12">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Escribe tu email">
+        </div>
+        <div class="row">
+           
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="numero">Número:</label>
+                    <input type="number" class="form-control" id="numero" placeholder="Ingresa un número">
+                </div>
+            </div>
+    
+            <div class="col-md-6">
+                <label for="flexCheckDefault">Seleccione tipo de producto/s:</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Borlas
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                     Colgantes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Atrapasueños
+                    </label>
+                  </div>
+            </div>
+        </div>
+
+        
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <input type="text" class="form-control" id="precio" placeholder="Precio">
+            <button class="btn btn-primary" type="button">Comprar</button>
+            
+        </div>       
+          
+        
+    </form>
+</div>
+
+<footer id="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <a href="https://www.instagram.com/luciernaga_creaciones/" class="social-icons"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100081302783648&mibextid=ZbWKwL" class="social-icons"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+        <p>&copy; Luciernaga Creaciones</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
