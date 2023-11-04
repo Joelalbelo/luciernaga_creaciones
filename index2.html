@@ -83,7 +83,7 @@
 </div>
 
 <div class="container-fluid d-flex justify-content-center">
-    <form class="row mt-3 mb-3 p-3" action="">
+    <form id="formulario-compra" class="row mt-3 mb-3 p-3" action="">
         <div class="col-md-6">
             <label for="name" class="form-label">Nombre:</label>
             <input type="text" class="form-control" id="name" placeholder="Escribe tu nombre">
@@ -100,8 +100,8 @@
            
             <div class="col-md-6">
                 <div class="form-group">
-                    <label for="numero">Número:</label>
-                    <input type="number" class="form-control" id="numero" placeholder="Ingresa un número">
+                    <label for="numero">Cantidad de productos:</label>
+                    <input type="number" name="numero" class="form-control" id="numero" placeholder="Ingresa un número" value="1">
                 </div>
             </div>
     
@@ -130,8 +130,10 @@
 
         
         <div class="d-grid gap-2 col-6 mx-auto">
-            <input type="text" class="form-control" id="precio" placeholder="Precio">
-            <button class="btn btn-primary" type="button">Comprar</button>
+            <div class="alert alert-dark mt-2 mb-4" role="alert">
+                Total a pagar: $ <span id="totalPago" class="align-middle font-weight-bold">0</span>
+            </div>
+            <button class="btn btn-primary" type="submit">Comprar</button>
             
         </div>       
           
@@ -152,5 +154,6 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="main.js"></script>
 </body>
 </html>
