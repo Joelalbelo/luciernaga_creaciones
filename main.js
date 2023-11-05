@@ -17,3 +17,13 @@ function calcularPrecio() {
     document.getElementById("resultado").textContent = "$" + precio;
   }
   
+  function cartelCompra() {
+    let precio = parseInt(document.getElementById("resultado").textContent);
+    if (precio!= 0) {
+      alert("¡MUCHAS GRACIAS! a la brevedad nos comunicaremos con vos.");
+    } else {
+      alert("Algo salio mal.");
+    }
+
+
+  }
